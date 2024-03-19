@@ -1,18 +1,18 @@
 # Projeto-Senac
-#Status do projeto
+## Status do projeto
 Em desenvolvimento
-#Tecnologias
+## Tecnologias
 Java
 HTML5
 CSS
 MySql
 Spring Boot
-#Desenvolvedores
+## Desenvolvedores
 Ives
-#Objetivo
+## Objetivo
 Projeto para conclusão de curso da instituição Senac.
 Um site para que facilite o acesso para todos que querem obter
 suas fotos de uma sessão de fotos.
-#Funcionalidades
+## Funcionalidades
 Com um código em mãos, poderá buscar no site por suas fotos e vídeos podendo
 fazer o download completo dos arquivos ou parcialmente.
