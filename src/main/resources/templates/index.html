@@ -15,7 +15,7 @@
                         <h1>Ives Fotografias</h1>
                     </div>
 
-                    <div class="col-md-10 mx-auto classe1">
+                    <div class="col-md-10 mx-auto">
                         <p>
                             Seja bem-vindo ao nosso site!
                             Estamos muito felizes em tê-lo aqui. Este é um lugar onde a arte da fotografia encontra a conveniência da tecnologia. Oferecemos sessões de fotos personalizadas, criadas para capturar a sua essência e os momentos que são mais importantes para você.
@@ -31,8 +31,8 @@
                 <div class="container text-center d-flex">
 
 
-                    <div class="col-md-8">
-                        <h3>Veja algumas de nossas fotos</h3>
+                    <div class="col-md-8" id="filho2">
+                        <h3 id="texto1">Veja algumas de nossas fotos</h3>
 
                         <div id="carouselExampleIndicators" class="carousel slide">
                             <div class="carousel-indicators">
@@ -62,7 +62,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="filho3">
                         <div class="card" style="width: 18rem;">
                             <img src="../static/images/estudio.jpeg" class="card-img-top" alt="Imagem de um estúdio">
                             <div class="card-body">
@@ -77,10 +77,40 @@
                 </div>
             </section>
 
+            <section>
+                <div class="container">
+                    <div class="col-md-10 mx-auto text-center" id="filho4">
+                        <h2>Procurando por suas fotos?</h2>
+                        <p>Encontre suas fotos aqui, utilize o código informado para que possa resgatar suas fotos e fazer o download delas!</p>
+                        <label class="form-label">Código</label>
+                        <div class="col-md-3 mx-auto">
+                            <form action="action" class="d-flex">
+                                 <input type="text" name="codigo" class="form-control">
+                                 <input type="submit" name="pesquisar" value="Baixar" class="btn btn-primary" style="margin-left: 3%">
+                            </form>
+                           
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <footer>
-
+            <div class="container-fluid" id="footer1"> 
+                <div class="col-md-12 d-flex align-items-center">
+                    <p class="filho6" id="filho7">Entre em contato:</p> 
+                    <img src="../static/images/cell.png" alt="alt" class="filho6" id="filho8"/>
+                    <p class="filho6" id="filho9">(11) 11111-1111</p>
+                    
+                    <p class="filho6" id="filho10">Instagram</p>
+                    <a href="#" class="filho6" id="filho11"><img src="../static/images/insta.png" alt="alt"/></a>
+                    
+                    <p class="filho6" id="filho12">Feito por Ives</p>
+                </div>
+            </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
