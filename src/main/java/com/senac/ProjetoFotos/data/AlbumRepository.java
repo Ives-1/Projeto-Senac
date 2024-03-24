@@ -4,4 +4,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AlbumRepository extends JpaRepository<AlbumEntity, Integer> {
 
+    AlbumEntity findByCodigo(String codigo);
 }

@@ -1,5 +1,6 @@
 package com.senac.ProjetoFotos.data;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,6 +20,8 @@ public class AlbumEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+    private String nome;
     private String caminho;
+    @Column(unique = true)
     private Integer codigo;
 }
