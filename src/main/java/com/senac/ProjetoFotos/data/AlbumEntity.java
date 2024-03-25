@@ -23,5 +23,5 @@ public class AlbumEntity {
     private String nome;
     private String caminho;
     @Column(unique = true)
-    private Integer codigo;
+    private String codigo;
 }

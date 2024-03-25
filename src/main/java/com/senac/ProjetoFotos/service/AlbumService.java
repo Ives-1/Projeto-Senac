@@ -34,6 +34,7 @@ public class AlbumService {
         if (!Files.exists(path)) {
             try {
                 Files.createDirectories(path);
+                album.setCaminho(path.toString());
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -41,12 +42,12 @@ public class AlbumService {
         return album;
     }
     
-    public String salvarArquivos(MultipartFile[] files){
-        String uploadDirectory = System.getProperty("user.dir") + "/upload";
+    //salva os arquivos na pasta criada dentro de medias
+    public String salvarArquivos(MultipartFile[] files, String caminhoDoAlbum){
         StringBuilder fileNames = new StringBuilder();
         
         for (MultipartFile file : files) {
-            Path fileNameAndPath = Paths.get(uploadDirectory, file.getOriginalFilename());
+            Path fileNameAndPath = Paths.get(caminhoDoAlbum, file.getOriginalFilename());
             fileNames.append(file.getOriginalFilename()+ " ");
             try {
                 Files.write(fileNameAndPath, file.getBytes());
